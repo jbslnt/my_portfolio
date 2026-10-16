@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About · Janica Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="page-header">
+  <div class="wrap">
+    <button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false">Switch to dark mode</button>
+    <p class="name">JANICA SOLANTE</p>
+    <p class="role">About me</p>
+  </div>
+</header>
+<nav class="nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a href="index.html">Home</a>
+    <a class="active" href="about.html">About</a>
+    <a href="works.html">Works</a>
+  </div>
+</nav>
+<main>
+<section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <div class="about">
+    <div>
+      <h3>What I do</h3>
+      <p>I support organizations by keeping systems running smoothly, helping people use technology effectively, and handling copyright and trademark registration to protect creative and innovative work.</p>
+      <h3>What I build</h3>
+      <p>Outside of support work, I build applications and websites with a focus on practical solutions, clear interfaces, and continuous improvement.</p>
+      <h3>What I'm looking for</h3>
+      <p>I'm open to collaborating on thoughtful projects where I can learn, solve problems, and create something useful.</p>
+    </div>
+    <dl class="facts">
+      <dt>Role</dt><dd>ITSO Staff</dd>
+      <dt>Language</dt><dd>English, Filipino, Cebuano</dd>
+      <dt>Location</dt><dd>Davao City, Philippines</dd>
+      <dt>Open to</dt><dd>Collaborations on fun projects</dd>
+    </dl>
+  </div>
+</div></section>
+<section id="experience"><div class="wrap">
+  <h2>Work experience</h2>
+  <article class="entry">
+    <h3>Technical Support Intern</h3>
+    <p class="org">Splace BPO</p>
+    <p class="when">February 2026 to April 2026</p>
+    <p>Provided technical support by troubleshooting hardware, software, and network issues, assisting users with technical concerns, setting up accounts, devices, and software, and maintaining technical documentation.</p>
+  </article>
+  <article class="entry">
+    <h3>Innovation and Technology Support Office Staff</h3>
+    <p class="org">Jose Maria College Foundation, Inc.</p>
+    <p class="when">July 2026 to Present</p>
+    <ul>
+      <li>Support users and help maintain reliable day-to-day technology operations.</li>
+      <li>Assist with copyright and trademark registration for organizational intellectual property.</li>
+      <li>Build and improve practical websites and applications through continuous learning.</li>
+    </ul>
+  </article>
+</div></section>
+<section id="stack"><div class="wrap">
+  <h2>Technical skills</h2>
+  <div class="group"><h3>Programming</h3><div class="chips">
+    <span class="chip java"><i>Jv</i>Java</span><span class="chip kotlin"><i>Kt</i>Kotlin</span><span class="chip csharp"><i>C#</i>C#</span><span class="chip python"><i>Py</i>Python</span><span class="chip cpp"><i>C+</i>C++</span>
+  </div></div>
+  <div class="group"><h3>Web development</h3><div class="chips">
+    <span class="chip javascript"><i>JS</i>JavaScript</span><span class="chip laravel"><i>Lv</i>Laravel</span><span class="chip php"><i>PHP</i>PHP</span><span class="chip html"><i>H5</i>HTML</span><span class="chip css"><i>C3</i>CSS</span>
+  </div></div>
+  <div class="group"><h3>Design and workflow</h3><div class="chips">
+    <span class="chip figma"><i>Fg</i>Figma</span><span class="chip project-management"><i>Pm</i>Project Management</span>
+  </div></div>
+  <div class="group"><h3>Tools</h3><div class="chips">
+    <span class="chip canva"><i>Ca</i>Canva</span><span class="chip vscode"><i>VS</i>VS Code</span><span class="chip android-studio"><i>AS</i>Android Studio</span><span class="chip visual-studio"><i>VS</i>Visual Studio</span><span class="chip github"><i>Gh</i>GitHub</span><span class="chip claude"><i>Cl</i>Claude AI</span><span class="chip chatgpt"><i>GPT</i>ChatGPT</span>
+  </div></div>
+</div></section>
+<section id="education"><div class="wrap"><h2>Education</h2>
+  <article class="entry education"><h3>College</h3><p class="degree">Bachelor of Science in Information Technology</p><p class="org">Jose Maria College Foundation, Inc.</p><p class="when">Batch 2026 · Cum Laude</p><p>I completed my Bachelor of Science in Information Technology at Jose Maria College Foundation, Inc., where I built a strong foundation in technology, software development, and practical problem-solving. I was an academic scholar throughout my college years, and my dedication to my studies was recognized as I graduated Cum Laude.</p></article>
+  <article class="entry education"><h3>High school</h3><p class="org">Tabon M. Estrella National High School</p><p class="when">I completed my junior high and senior high school education at Tabon M. Estrella National High School, graduating under the Humanities and Social Sciences (HUMSS) strand. My dedication and hard work were recognized as I graduated with honors, building a strong foundation for my academic and professional pursuits.</p></article>
+  <article class="entry education"><h3>Elementary</h3><p class="org">Plaza Central Elementary School</p><p class="when">I spent my elementary years at Plaza Central Elementary School, where I developed a strong academic foundation and graduated among the top 10 students in my batch. This achievement reflected my commitment to learning and personal growth during my formative years.</p></article>
+</div></section>
+<section id="certifications"><div class="wrap"><h2>Certifications</h2>
+  <button type="button" class="entry cert" id="certBtn" aria-haspopup="dialog"><h3>Responsive Web Design</h3><p class="org">freeCodeCamp</p><p class="hint">View certificate</p></button>
+  <dialog id="certDialog" aria-label="Responsive Web Design certificate"><button type="button" class="close" id="certClose">Close</button><div id="certBody"></div></dialog>
+</div></section>
+</main>
+<footer>© <span id="yr"></span> · jbslnt</footer>
+<script src="script.js"></script>
+</body>
+</html>

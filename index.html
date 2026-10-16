@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Janica · Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Landing screen -->
+<div id="landing">
+  <div id="sea2" aria-hidden="true"></div>
+  <svg class="waves" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 30 Q150 6 300 30 T600 30 T900 30 T1200 30 V64 H0Z" fill="#4c86d0" opacity=".6"/>
+    <path d="M0 44 Q150 24 300 44 T600 44 T900 44 T1200 44 V64 H0Z" fill="var(--deep)"/>
+  </svg>
+  <div class="inner">
+    <p class="greet">Hello! ¡Hola! こんにちは!</p>
+    <h1>Psst... come closer</h1>
+    <div class="loader" id="loader" role="progressbar" aria-label="Loading portfolio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="loader-fill" id="loaderFill"></div>
+    </div>
+    <p class="loader-text" id="loaderText">Loading... 0%</p>
+    <button type="button" class="btn pri" id="enter" disabled>Curious? Come on in</button>
+    <button type="button" class="skip-intro" id="skipIntro">Skip intro</button>
+  </div>
+</div>
+
+<header class="hero" id="home">
+  <button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false">Switch to dark mode</button>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill">jbslnt · she/her</span>
+      <p class="name">JANICA SOLANTE</p>
+      <p class="role">Innovation and Technology Support Specialist · Developer</p>
+      <h1>Hello! ¡Hola!<br>こんにちは!</h1>
+      <p class="lead">I support people through technology and build practical digital experiences that make everyday work simpler.</p>
+      <div class="btns">
+        <a class="btn pri" href="https://drive.google.com/uc?export=download&amp;id=1LUhE6UD07KYsgH1snoZozrwOy7DDQSVH" download>Download my resume</a>
+      </div>
+    </div>
+
+    <div class="portrait"><img src="images/portrait.jpg" alt="Portrait of Janica Solante" width="200" height="200"></div>
+  </div>
+  <div id="sea" aria-hidden="true"></div>
+  <svg class="waves" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 30 Q150 6 300 30 T600 30 T900 30 T1200 30 V64 H0Z" fill="#4c86d0" opacity=".6"/>
+    <path d="M0 44 Q150 24 300 44 T600 44 T900 44 T1200 44 V64 H0Z" fill="var(--deep)"/>
+  </svg>
+</header>
+
+
+<nav class="nav" aria-label="Main navigation">
+  <div class="wrap">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="works.html">Works</a>
+  </div>
+</nav>
+
+<main>
+<section class="home-intro"><div class="wrap">
+  <h2>A little about me</h2>
+  <div class="home-grid">
+    <div>
+      <p>I am an Innovation and Technology Support Specialist and developer who enjoys helping people solve technical problems and creating practical digital solutions.</p>
+      <p>With experience in technical support, application development, and website design, I am always learning new ways to make technology more useful and accessible.</p>
+      <a class="btn sec" href="about.html">Read more about me</a>
+    </div>
+    <div class="facts">
+      <dt>Focus</dt><dd>Technical support and development</dd>
+      <dt>Enjoys</dt><dd>Building useful applications and websites</dd>
+      <dt>Open to</dt><dd>Learning, collaboration, and new opportunities</dd>
+    </div>
+  </div>
+</div></section>
+
+<section class="home-highlights"><div class="wrap">
+  <h2>My expertise</h2>
+  <div class="expertise-grid">
+    <article class="expertise-card expertise-support">
+      <i>TS</i>
+      <h3>Technical Support</h3>
+      <p>Helping users resolve technical concerns and keeping hardware, software, and network systems working reliably.</p>
+    </article>
+    <article class="expertise-card expertise-development">
+      <i>WD</i>
+      <h3>Web and Application Development</h3>
+      <p>Building practical websites and applications with a focus on useful features, clear interfaces, and continuous improvement.</p>
+    </article>
+    <article class="expertise-card expertise-design">
+      <i>UI</i>
+      <h3>UI and Visual Design</h3>
+      <p>Creating clean and approachable interfaces using design tools such as Figma and Canva.</p>
+    </article>
+    <article class="expertise-card expertise-ip">
+      <i>IP</i>
+      <h3>Intellectual Property Support</h3>
+      <p>Assisting with copyright and trademark registration to help protect creative and innovative work.</p>
+    </article>
+  </div>
+</div></section>
+
+<section class="featured-works"><div class="wrap">
+  <h2>Featured works</h2>
+  <div class="grid">
+    <article class="card android">
+      <h3>Android app</h3>
+      <p>A mobile app built with Kotlin and Android Studio.</p>
+      <a href="works.html#android-app">View project</a>
+    </article>
+    <article class="card laravel-app">
+      <h3>Laravel web app</h3>
+      <p>A full-stack site built with Laravel and PHP.</p>
+      <a href="works.html#laravel-app">View project</a>
+    </article>
+    <article class="card python-tool">
+      <h3>Python tool</h3>
+      <p>A script or tool that automates a task.</p>
+      <a href="works.html#python-tool">View project</a>
+    </article>
+  </div>
+  <a class="btn pri home-works-link" href="works.html">View all works</a>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <h2>Let's build something</h2>
+  <p>Got a fun project in mind? I'd like to hear about it. </p>
+  <div class="btns">
+
+    <a class="btn sec" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=darksolante0408@gmail.com" target="_blank" rel="noopener">Email me</a>
+    <a class="btn pri" href="https://www.linkedin.com/in/janica-solante-4346712a3/">LinkedIn</a>
+    <a class="btn sec" href="https://www.facebook.com/profile.php?id=61588478040890">Facebook</a>
+    <a class="btn pri" href="https://github.com/jbslnt">GitHub</a>
+  </div>
+</div></section>
+</main>
+
+<footer>© <span id="yr"></span> · jbslnt</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
