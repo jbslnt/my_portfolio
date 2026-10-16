@@ -60,7 +60,11 @@ function fillSea(sea){
 
 // Landing screen
 const landing = document.getElementById('landing');
+const introSeenKey = 'portfolioIntroSeen';
+const introWasSeen = sessionStorage.getItem(introSeenKey) === 'true';
+
 function enterSite(){
+  sessionStorage.setItem(introSeenKey, 'true');
   landing.classList.add('leaving');
   document.documentElement.classList.remove('locked');
   window.scrollTo(0,0);
@@ -68,7 +72,10 @@ function enterSite(){
 }
 document.getElementById('enter')?.addEventListener('click', enterSite);
 document.getElementById('skipIntro')?.addEventListener('click', enterSite);
-if (location.hash && landing) { landing.remove(); }
+if ((location.hash || introWasSeen) && landing) {
+  sessionStorage.setItem(introSeenKey, 'true');
+  landing.remove();
+}
 else if (landing) { document.documentElement.classList.add('locked'); }
 
 // Loading bar
