@@ -6,7 +6,8 @@ function setTheme(theme) {
   const isDark = theme === 'dark';
   document.documentElement.dataset.theme = theme;
   themeToggle.setAttribute('aria-pressed', String(isDark));
-  themeToggle.textContent = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+  themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+  themeToggle.setAttribute('title', isDark ? 'Switch to light mode' : 'Switch to dark mode');
 }
 
 setTheme(savedTheme === 'dark' || savedTheme === 'light'
